@@ -19,7 +19,7 @@ function MainBg({shoes}) {
         let numData = localStorage.getItem('watChed');
         numData = JSON.parse(numData)
         numData?.length > 1 ? setRItem(true) : setRItem(false)
-    })  
+    },[])  
    
     // pwa 설치 코드 (클릭시 installApp함수 호출후 설치 화면 팝업 됨)
     let deferredPrompt
